@@ -1,0 +1,102 @@
+/* styles.module.css */
+
+:root {
+  --primary-light: #365897;
+  --primary-dark: #2b4773;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s;
+}
+
+.header {
+  background-color: var(--primary-dark);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 50px; /* Adjust the height as needed */
+  width: auto;
+}
+
+.nav {
+  margin-top: 1em;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li {
+  margin-right: 1em;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.nav a:hover {
+  color: #ddd;
+}
+
+.main-content {
+  max-width: 400px;
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 0.5em;
+}
+
+.form-container input {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.form-container button {
+  background-color: var(--primary-light);
+  color: white;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: var(--primary-dark);
+}
+
+.main-content p {
+  margin-top: 1em;
+}
+
+.footer {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--primary-dark);
+  color: white;
+}
